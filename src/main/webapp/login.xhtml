@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+                      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:c="http://java.sun.com/jstl/core">
+
+<h:head>
+	<meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/todc-bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/main.css" type="text/css" rel="stylesheet"/>
+    <link href="css/signin.css" type="text/css" rel="stylesheet" />
+    
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</h:head>
+
+<h:body styleClass="main-body">
+
+	<div class="container" style="margin-top: 40px;">
+
+      <h2 class="form-signin-heading text-center">Login</h2>
+
+      <div class="card card-signin">
+<!--         <img class="img-circle profile-img" src="avatar.png" alt=""> -->
+        <h:form styleClass="form-signin">
+          <p:outputLabel for="username" styleClass="sr-only" value="Nome utente"></p:outputLabel>
+          <p:inputText id="username" value="#{userBean.username}" placeholder="nome utente" styleClass="form-control">
+			<p:ajax update="@this" process="@this" />
+		  </p:inputText>
+		  
+          <p:outputLabel for="password" class="sr-only" value="Password"></p:outputLabel>
+          <p:inputText id="password" value="#{userBean.password}" styleClass="form-control" placeholder="password">
+			<p:ajax update="@this" process="@this" />
+		  </p:inputText>
+          
+          <p:commandButton value="Login" action="#{userBean.authenticate}" styleClass="btn btn-lg btn-primary btn-block"/>
+
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="remember-me"/> Stay signed in
+            </label>
+          </div>
+
+        </h:form>
+      </div>
+
+      <p class="text-center">
+        Designed by SIA S.p.A.
+      </p>
+
+    </div>
+    	
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</h:body>
+</html>
