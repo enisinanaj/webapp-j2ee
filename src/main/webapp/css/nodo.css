@@ -1,0 +1,26 @@
+
+.node:before {
+	content: '';
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    position: relative;
+    top: 7px;
+    background: antiquewhite;
+}
+
+.node{
+	line-height: 30px;
+	position: relative;
+}
+
+.node .parent-connector {
+	position: absolute;
+    top: 0px;
+    left: -65px;
+}
+
+.parent-connector svg {
+	width: 70px;
+	height: 32px;
+}

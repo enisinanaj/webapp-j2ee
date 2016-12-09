@@ -1,0 +1,62 @@
+<ui:component
+	xmlns="http://www.w3.org/1999/xhtml" 
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:c="http://java.sun.com/jstl/core"
+	xmlns:ipm="http://ipmcomponents.sia.com/jsf">
+	
+	<c:set var="livelloCorrente" value="#{livello != null ? livello + 1 : 0}"/>
+	
+	<h:panelGroup redered="#{rendered != null ? rendered : true}">
+		<div class="nodeContainer">
+			<div class="node col-md-offset-#{livelloCorrente} #{node.data.type.value}">
+				<c:if test="#{livelloCorrente gt 0}">
+					<div class="parent-connector">
+						<svg>
+							<g>
+								<g>
+									<ellipse cx="10" cy="7" rx="5.75" ry="5.75" fill="none"
+										stroke="#faebd7" stroke-width="1.75" pointer-events="all"/>
+								</g>
+								<g>
+									<path d="M 15 7 L 25 7" fill="none" stroke="#faebd7"
+										stroke-width="1.75" stroke-miterlimit="10" transform="rotate(90, 10, 7)"/>
+								</g>
+								<g>
+									<path d="M 10 22 L 70 22" fill="none" stroke="#faebd7"
+										stroke-width="1.75" stroke-miterlimit="10"/>
+								</g>
+							</g>
+						</svg>
+					</div>
+				</c:if>
+				#{node.data.name}
+				
+				<h:panelGroup rendered="#{debug}">
+					<div>node with children: #{not empty node.children ? 'true' : 'false'}</div>
+					<div>children size: #{node.children.size()}</div>
+				</h:panelGroup>				
+			</div>
+			
+			<h:panelGroup rendered="#{debug}">
+				<hr />
+				<div>looping children</div>
+			</h:panelGroup>
+			
+			<c:forEach items="#{node.children}" var="child">
+				<div class="children livello-#{livelloCorrente} col-md-12">
+					<h:panelGroup rendered="#{debug}">
+						debug from parent node
+						<div>child name: #{child.data.name}</div>
+						<div>child with children: #{not empty child.children ? 'true' : 'false'}</div>
+						<div>children size: #{child.children.size()}</div>
+						<hr />
+					</h:panelGroup>
+					
+					<ipm:nodeView node="#{child}" livello="#{livelloCorrente}"></ipm:nodeView>
+				</div>
+			</c:forEach>
+		</div>
+	</h:panelGroup>
+</ui:component>
