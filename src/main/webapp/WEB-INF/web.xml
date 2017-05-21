@@ -1,10 +1,10 @@
 <web-app xmlns="http://java.sun.com/xml/ns/javaee" version="2.5">
 
-	<display-name>Insurance Product Viewer</display-name>
+	<display-name>JHome Insurance</display-name>
 	
 	<context-param>
 		<param-name>primefaces.THEME</param-name>
-		<param-value>none</param-value>
+		<param-value>bootstrap</param-value>
 	</context-param>
 	
 	<context-param>
@@ -39,7 +39,7 @@
 	
 	<context-param>
 		<param-name>javax.faces.FACELETS_LIBRARIES</param-name>
-		<param-value>/WEB-INF/ipm.taglib.xml</param-value>
+		<param-value>/WEB-INF/hi.taglib.xml</param-value>
 	</context-param>
 	
 <!-- 	<filter> -->
@@ -96,7 +96,6 @@
   	</listener>
 	
 	<session-config>	
-		<session-timeout>10</session-timeout>
-		<tracking-mode>COOKIE</tracking-mode>
+		<session-timeout>5</session-timeout>
 	</session-config>
 </web-app>

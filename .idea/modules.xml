@@ -3,6 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ipviewer.iml" filepath="$PROJECT_DIR$/ipviewer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/webapp-j2ee.iml" filepath="$PROJECT_DIR$/.idea/modules/webapp-j2ee.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/webapp-j2ee_main.iml" filepath="$PROJECT_DIR$/.idea/modules/webapp-j2ee_main.iml" group="webapp-j2ee" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/webapp-j2ee_test.iml" filepath="$PROJECT_DIR$/.idea/modules/webapp-j2ee_test.iml" group="webapp-j2ee" />
     </modules>
   </component>
 </project>

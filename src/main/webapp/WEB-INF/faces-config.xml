@@ -8,9 +8,9 @@
 	
 	
 	<application>
-		<view-handler>com.sia.ipviewer.faces.IPViewerViewHandler</view-handler>
+		<!--view-handler>com.sia.ipviewer.faces.IPViewerViewHandler</view-handler-->
 		<action-listener>
-         org.primefaces.application.DialogActionListener
+			org.primefaces.application.DialogActionListener
         </action-listener>
         <navigation-handler>
             org.primefaces.application.DialogNavigationHandler
@@ -30,11 +30,11 @@
 	</application>
 	
 	
-	<factory>
+	<!--factory>
     	<exception-handler-factory>
         	com.sia.ipviewer.faces.FullAjaxExceptionHandlerFactory
     	</exception-handler-factory>
-    </factory>
+    </factory-->
 
 <!-- 	<lifecycle> -->
 <!-- 		<phase-listener>com.sia.nebula.integration.portal.urlblocker.UrlBlockerPhaseListener</phase-listener> -->

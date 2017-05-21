@@ -1,0 +1,42 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Gradle : webapp-j2ee.war (exploded)">
+    <output-path>$PROJECT_DIR$/build/libs/exploded/webapp-j2ee.war</output-path>
+    <properties id="gradle-properties">
+      <options external-project-path="$PROJECT_DIR$">
+        <manifest>TWFuaWZlc3QtVmVyc2lvbjogMS4wDQoNCg==</manifest>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/build/libs/exploded/webapp-j2ee.war/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="webapp-j2ee_main/web/Web Gradle : webapp-j2ee.war" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="webapp-j2ee_main" />
+          <element id="dir-copy" path="$PROJECT_DIR$/build/resources/main" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.sun.faces/jsf-api/2.2.5/795d03ba6dedb299f90f7935939894912b3f5a18/jsf-api-2.2.5.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.sun.faces/jsf-impl/2.2.5/8f0f80d3ebc5a1858b65492969bdb0b0040bdfb5/jsf-impl-2.2.5.jar" />
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/org/primefaces/primefaces/6.0/primefaces-6.0.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.primefaces.themes/bootstrap/1.0.10/f5de3f59380e672983c5de3d27f926df580aafb6/bootstrap-1.0.10.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.2.1/66f13681add50ca9e4546ffabafaaac7645db3cf/commons-lang3-3.2.1.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.weld/weld-core/2.0.0.Final/b648db674aadae4da60ad6e0c05bdb760051d2a3/weld-core-2.0.0.Final.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.weld/weld-api/2.0.Final/21708ad18d1d10d30a918cecd8c33180ea4e93c4/weld-api-2.0.Final.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.weld/weld-spi/2.0.Final/dad37b227e6252c8ebb9d8e1c38885096b144fe8/weld-spi-2.0.Final.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.classfilewriter/jboss-classfilewriter/1.0.4.Final/de3312a15f1d1385abb88ea448d5672cb514e58f/jboss-classfilewriter-1.0.4.Final.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.spec.javax.annotation/jboss-annotations-api_1.2_spec/1.0.0.Alpha1/669a896d009dc616a8e418aa22ab05245322ae9/jboss-annotations-api_1.2_spec-1.0.0.Alpha1.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/13.0.1/d6f22b1e60a2f1ef99e22c9f5fde270b2088365/guava-13.0.1.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.spec.javax.interceptor/jboss-interceptors-api_1.2_spec/1.0.0.Alpha3/4c0be1c46e8f6493b2a8eb1e6117e3085eb9cc1e/jboss-interceptors-api_1.2_spec-1.0.0.Alpha3.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-ext/1.7.2/676a2fc95740d6d070e2c7c54920e83e6c6969ec/slf4j-ext-1.7.2.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/ch.qos.cal10n/cal10n-api/0.7.7/52b68e7277637409804a7cabb3c58361d95c2242/cal10n-api-0.7.7.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.2/81d61b7f33ebeab314e07de0cc596f8e858d97/slf4j-api-1.7.2.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.enterprise/cdi-api/1.1/78b1feee99b05a78575fb2fd79fb77be5e74420d/cdi-api-1.1.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.spec.javax.interceptor/jboss-interceptors-api_1.1_spec/1.0.0.Beta1/8cb388fd3b4912373da7a18e199bb55aa52aa5c1/jboss-interceptors-api_1.1_spec-1.0.0.Beta1.jar" />
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/javax/el/el-api/2.2/el-api-2.2.jar" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

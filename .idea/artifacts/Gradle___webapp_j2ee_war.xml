@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Gradle : webapp-j2ee.war">
+    <output-path>$PROJECT_DIR$/build/libs</output-path>
+    <properties id="gradle-properties">
+      <options external-project-path="$PROJECT_DIR$" />
+    </properties>
+    <root id="archive" name="webapp-j2ee.war">
+      <element id="artifact" artifact-name="Gradle : webapp-j2ee.war (exploded)" />
+    </root>
+  </artifact>
+</component>
